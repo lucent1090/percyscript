@@ -5,7 +5,7 @@ PercyScript.run(async (page, percySnapshot) => {
   await page.goto('http://google.com');
   await percySnapshot('Google home page');
 
-  await page.type('.gLFyf', 'test input');
+  await page.type('.gLFyf', 'test input 111');
   await percySnapshot('Google input test')
   // Enter a new to-do.
   // await page.type('.new-todo', 'A really important todo');
