@@ -18,7 +18,7 @@ PercyScript.run(async (page, percySnapshot) => {
 
     const routes = await getRoutes();
 
-    routes.slice(0, 5).forEach(route => {
+    routes.slice(0, 5).forEach(async route => {
         await page.goto(route);
         await percySnapshot(route);
     });
