@@ -1,0 +1,23 @@
+{
+  "name": "percyscript",
+  "version": "1.0.0",
+  "description": "testing percy script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snapshots": "percy exec -- node snapshots.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucent1090/percyscript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucent1090/percyscript/issues"
+  },
+  "homepage": "https://github.com/lucent1090/percyscript#readme",
+  "dependencies": {
+    "@percy/script": "^1.0.3"
+  }
+}
