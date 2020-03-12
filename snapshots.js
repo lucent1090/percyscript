@@ -26,13 +26,13 @@ async function getRoutes() {
 PercyScript.run(async (page, percySnapshot) => {
 
     const routes = await getRoutes();
-    const query = routes.slice(0, 3).map(route => {
-        return async route => {
-            await page.goto(route);
-            await percySnapshot(route);
-        };
+    const queries = routes.slice(0, 3).map(async route => {
+        console.log(route);
+        await page.goto(route);
+        return await percySnapshot(route);
     });
-    Promise.all(query)
+
+    await Promise.all(queries)
 
     // const url1 = routes[0].fields.url;
     // await page.goto(url1);
