@@ -21,6 +21,6 @@
     "@percy/script": "^1.0.3",
     "contentful": "^7.14.0",
     "contentful-management": "^5.13.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   }
 }
